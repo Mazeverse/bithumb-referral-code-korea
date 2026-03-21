@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bithumb.xn--hy1bx66a1wdl2ac5d.com/sitemap.xml
