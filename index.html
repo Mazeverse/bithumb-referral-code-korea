@@ -1,142 +1,218 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빗썸 추천인 코드 66UIS2PJNO | 특별 가입 혜택</title>
+    <meta name="description" content="빗썸 추천인 코드 입력하고 최대 5만원 혜택을 받으세요.">
+    <!-- 폰트 및 아이콘 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-color: #38bdf8;
+        }
 
-<title>빗썸 추천인 코드 66UIS2PJNO | 가입 혜택</title>
-<meta name="description" content="빗썸 추천인 코드 입력하고 최대 5만원 혜택 받으세요.">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(168, 85, 247, 0.15) 0%, transparent 50%);
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
 
-<meta name="google-site-verification" content="BtBII3918J1J9BnNiNfjVaPn0QXfIj5xoi1G_8qtFk4" />
-<meta name="naver-site-verification" content="f28f86b7853e4f6704297b86d7def790b41e00e4" />
+        .container {
+            width: 100%;
+            max-width: 420px;
+            padding: 24px;
+            box-sizing: border-box;
+        }
 
-<link rel="canonical" href="https://bithumb.xn--hy1bx66a1wdl2ac5d.com/">
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-<style>
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif;
-    background: linear-gradient(180deg, #0b0f1a, #05070d);
-    color: #fff;
-}
+        .logo-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
 
-.container {
-    max-width: 480px;
-    margin: auto;
-    padding: 20px;
-}
+        .main-title {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(to right, #fff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-.title {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 20px 0;
-}
+        /* 혜택 카드 */
+        .benefit-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            margin-bottom: 24px;
+        }
 
-.card {
-    background: #111827;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
+        .benefit-label {
+            font-size: 15px;
+            color: #94a3b8;
+            margin-bottom: 8px;
+        }
 
-.benefits {
-    display: flex;
-    gap: 10px;
-}
+        .benefit-amount {
+            font-size: 42px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 4px;
+        }
 
-.box {
-    flex: 1;
-    padding: 16px;
-    border-radius: 14px;
-    text-align: center;
-}
+        .benefit-sub {
+            font-size: 14px;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
 
-.left {
-    border: 1px solid #22d3ee;
-}
+        /* 코드 섹션 */
+        .code-section {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 20px;
+            margin: 24px 0;
+            position: relative;
+        }
 
-.right {
-    border: 1px solid #a78bfa;
-}
+        .code-title {
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
 
-.big {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 8px;
-}
+        .code-value {
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #fff;
+        }
 
-.code-box {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 20px 0;
-    letter-spacing: 2px;
-}
+        /* 버튼 스타일 */
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
 
-.button {
-    width: 100%;
-    padding: 14px;
-    border-radius: 12px;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
-}
+        .btn {
+            width: 100%;
+            padding: 18px;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.copy {
-    background: linear-gradient(90deg, #22c55e, #16a34a);
-}
+        .btn-primary {
+            background: var(--primary-gradient);
+            color: white;
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
 
-.link {
-    background: linear-gradient(90deg, #3b82f6, #2563eb);
-}
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px rgba(99, 102, 241, 0.4);
+        }
 
-.footer {
-    margin-top: 15px;
-    font-size: 13px;
-    color: #9ca3af;
-}
-</style>
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-info {
+            text-align: center;
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 32px;
+        }
+
+        /* 애니메이션 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
 </head>
-
 <body>
 
 <div class="container">
+    <header>
+        <span class="logo-text">BITHUMB SPECIAL</span>
+        <h1 class="main-title">초대 전용 혜택</h1>
+    </header>
 
-<div class="title">빗썸 추천인 코드</div>
+    <div class="benefit-card">
+        <div class="benefit-label">신규 가입 시 친구 혜택</div>
+        <div class="benefit-amount">50,000원</div>
+        <div class="benefit-sub">계좌 연결 즉시 지급</div>
 
-<div class="card">
-    <div class="benefits">
-        <div class="box left">
-            <div>나의 혜택</div>
-            <div class="big">3만원</div>
+        <div class="code-section">
+            <span class="code-title">Referral Code</span>
+            <div class="code-value" id="referralCode">66UIS2PJNO</div>
         </div>
-        <div class="box right">
-            <div>친구 혜택</div>
-            <div class="big">5만원</div>
+
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="goLink()">혜택 받고 가입하기</button>
+            <button class="btn btn-secondary" onclick="copyCode()">추천 코드 복사</button>
         </div>
     </div>
-</div>
 
-<div class="card">
-    <div>추천인 코드</div>
-    <div class="code-box">66UIS2PJNO</div>
-
-    <button class="button copy" onclick="copyCode()">코드 복사</button>
-    <button class="button link" onclick="goLink()">가입 바로가기</button>
-</div>
-
-<div class="footer">
-추천인 코드 입력 후 계좌 연결 시 혜택 지급됩니다.
-</div>
-
+    <div class="footer-info">
+        본 혜택은 추천인 코드 입력 및<br>NH농협은행 계좌 연결 시 최종 지급됩니다.
+    </div>
 </div>
 
 <script>
 function copyCode() {
-    navigator.clipboard.writeText("66UIS2PJNO");
-    alert("복사 완료!");
+    const code = document.getElementById('referralCode').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+        alert("코드가 복사되었습니다! 가입 시 붙여넣어 주세요.");
+    });
 }
 
 function goLink() {
